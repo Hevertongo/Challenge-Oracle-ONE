@@ -1,39 +1,49 @@
-<!DOCTYPE html><html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
 		<!-- Título que aparece no navegador -->
 		<title>Challenge Oracle ONE - Alura</title>
+        <link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header>
 			<!-- Título que aparece na página -->
-			<h1 class="title">Challenge Oracle ONE - Alura</h1>
+			<img class="logo" src="img/logo.png" alt="logotipo">
+			<h1 class="titulo">Challenge Oracle ONE - Alura</h1>
 		</header>
-		<div>
+		<div class="entrada">
 			<!-- Divisor para a tela de criptografar-->
 			<div>
 				<!-- Área para escrever o texto -->
-				<textarea cols="20" rows="20" placeholder="Digite seu texto..."></textarea>
+				<textarea class="txt-area1" placeholder="Digite seu texto..."></textarea>
 			</div>
-			<div>
+			<div class="info">
 				<!-- Aviso de acordo com Figma -->
 				 <img src="img/exclamation.svg" alt="ponto de exclamação" width="12px" >
-				 <p >Apenas letras minúsculas e sem acento.</p>
+				 <p>Apenas letras minúsculas e sem acento.</p>
 			</div>
-			<div>
+			<div class="botoes">
 				<!-- Área para os botões -->
-				<button>Criptografar</button>
-				<button>Descriptografar</button>
+				<button class="botao1"><h4>Criptografar</h4></button>
+				<button class="botao2"><h4>Descriptografar</h4></button>
 			</div>
 		</div>
-		<div>
-			<div>
+		<div class="resultados">
 				<!-- Área com o resultado -->
-				<textarea cols="20" rows="20" placeholder="Texto já criptografado ou descriptografado..."></textarea>
+			<div class="none">
+				<img class="lupa" src="img/procurando.svg">
+				<h2>Nenhuma mensagem encontrada</h2>
+			</div>
+			<div>
+				<textarea class="txt-area2" readonly cols="20" rows="20" placeholder="[Digite um texto que você deseja criptografar ou descriptografar]"></textarea>
+			</div>
+			<div class="botaoCopia">
+				<button class="botao2"><h4>Copiar</h4></button>
 			</div>
 		</div>
 		<footer>
-			<div>
+			<div class="footer">
 				<!-- Área para dados pessoais no rodapé -->
 				<p>2022 <a href="https://www.linkedin.com/in/heverton-lima-56371b23/">Heverton Elias de Lima</a></p>
 			</div>

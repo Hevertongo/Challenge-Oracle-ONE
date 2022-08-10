@@ -1,0 +1,238 @@
+/*body, button {
+    font-family: 'Inter', monospace;
+    background-color: #F3F5FC;
+}*/
+
+body {
+    background-color: #F3F5FC;
+    display: flex;
+    height: 90vh;
+    width: 90vw;
+    min-height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo {
+    margin: 30px 0 0 20px ;
+    width: 120px;
+    height: 48px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.titulo {
+    position: absolute;
+    top: 30px;
+    left: 304px;
+    font-size: 25px;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+.entrada {
+    box-sizing: border-box;
+    width: 50vw;
+    height: 80vh;
+    margin: 20px 0 0 0px;
+    justify-content: center;
+    padding: 10px 80px;
+}
+
+.resultados {
+    /*Monta um box branco*/
+    position: absolute;
+    width: 400px;
+    height: 585px;
+    left: 900px;
+    top: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+}
+
+
+.txt-area1 {
+    /*Caixa para entrada de texto*/
+    position: absolute;
+    width: 700px;
+    height: 72px;
+    left: 150px;
+    top: 120px;
+
+    border: 1px solid #F3F5FC;
+    background-color: #F3F5FC;
+    margin: 30px 20px 10px 20px;
+    
+    font-size: 20px;
+    text-align: left;
+    color: #0A3871;
+    text-transform:lowercase;
+}
+
+.txt-area2 {
+    /*Caixa para entrada de texto*/
+    position: absolute;
+    width: 350px;
+    height: 110px;
+    left: 0px;
+    top: 340px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    margin: 30px 20px 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #495057;
+    /*border-radius: 20px; /*Arredonda os cantos*/*/
+    text-transform:lowercase;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 340px;
+    height: 18px;
+    left: 150px;
+    top: 490px;
+}
+
+.info p {
+    font-size: 12px;
+    color: #495057;
+    margin: 0 0 0 5px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 160px;
+    height: 67px;
+    left: 150px;
+    top: 520px;
+}
+
+.botaoCopia {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 160px;
+    height: 67px;
+    left: 60px;
+    top: 505px;
+}
+
+.botao1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    
+    width: 280px;
+    height: 60px;
+    
+    /* Dark blue/dark-blue-300 */
+    
+    background: #0A3871;
+    border-radius: 24px;
+    box-shadow: 10px 10px 20px -8px rgba(0, 0, 0, 1);
+    
+    color: white;
+    /*Alinha o texto no centro do botão*/
+    justify-content: center;
+    align-items: center;
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.botao1:hover {
+    background-color:#002F55;
+    filter: drop-shadow(2px 4px 2px #00000025);
+}
+.botao1:active{
+    box-shadow: none;
+}
+
+.botao2 {
+    /* Button */
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    
+    width: 280px;
+    height: 60px;
+    
+    /* Light gray */
+    
+    background: #D8DFE8;
+    /* Dark blue/dark-blue-300 */
+    
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    box-shadow: 10px 10px 20px -8px rgba(0, 0, 0, 1);
+
+    /*Alinha o texto no centro do botão*/
+    justify-content: center;
+    align-items: center;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botao2:hover {
+    color: #0A3871;
+    border-color: #0F4C81;
+    background: #FFFFFF;
+    filter: drop-shadow(2px 4px 2px #00000025); 
+}
+
+.botao2:active{
+    box-shadow: none;
+}
+
+
+.none {
+    text-align: center;
+    justify-content: center;
+}
+
+.lupa {
+    width: 360px;
+    height: 240px;
+    margin: 70px 0px 0px 0px;
+}
+
+
+footer {
+        display: flex;
+         position: absolute; 
+        flex-direction: column;
+        text-align: center;    
+        font-size: 18px;
+        color: #0A3871;
+        height: 4 rem; 
+        width: 95%; 
+        bottom: 0px;
+}
