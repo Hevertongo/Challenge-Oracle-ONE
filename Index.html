@@ -9,14 +9,14 @@
 	<body>
 		<header>
 			<!-- Título que aparece na página -->
-			<img class="logo" src="img/logo.png" alt="logotipo">
+			<img id="logo" src="img/logo.png" alt="logotipo">
 			<h1 class="titulo">Challenge Oracle ONE - Alura</h1>
 		</header>
 		<div class="entrada">
 			<!-- Divisor para a tela de criptografar-->
 			<div>
 				<!-- Área para escrever o texto -->
-				<textarea class="txt-area1" placeholder="Digite seu texto..."></textarea>
+				<textarea id="entrada" class="txt-area1" placeholder="Digite seu texto..."></textarea>
 			</div>
 			<div class="info">
 				<!-- Aviso de acordo com Figma -->
@@ -33,13 +33,14 @@
 				<!-- Área com o resultado -->
 			<div class="none">
 				<img class="lupa" src="img/procurando.svg">
-				<h2>Nenhuma mensagem encontrada</h2>
+				<h2 id="none">Nenhuma mensagem encontrada</h2>
 			</div>
 			<div>
 				<textarea class="txt-area2" readonly cols="20" rows="20" placeholder="[Digite um texto que você deseja criptografar ou descriptografar]"></textarea>
 			</div>
+			<!-- Botão para copiar o conteúdo para a área de trabalho -->
 			<div class="botaoCopia">
-				<button class="botao2"><h4>Copiar</h4></button>
+				<button id="botaoCopia" class="botao2"><h4>Copiar</h4></button>
 			</div>
 		</div>
 		<footer>
@@ -48,5 +49,6 @@
 				<p>2022 <a href="https://www.linkedin.com/in/heverton-lima-56371b23/">Heverton Elias de Lima</a></p>
 			</div>
 		</footer>
+		<script src="js/script.js"></script>
 	</body>
 </html>
