@@ -204,9 +204,12 @@ body {
 }
 
 
-.none {
+.naoEncontrado {
     text-align: center;
     justify-content: center;
+}
+.naoEncontrado h2 {
+    font-size: 25px;
 }
 
 .lupa {
@@ -218,7 +221,7 @@ body {
 
 footer {
         display: flex;
-         position: absolute; 
+        position: absolute; 
         flex-direction: column;
         text-align: center;    
         font-size: 18px;
