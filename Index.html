@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<!-- Título que aparece no navegador -->
 		<title>Challenge Oracle ONE - Alura</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -16,11 +17,11 @@
 			<!-- Divisor para a tela de criptografar-->
 			<div>
 				<!-- Área para escrever o texto -->
-				<textarea id="entrada" class="txt-area1" placeholder="Digite seu texto..."></textarea>
+				<textarea id="entrada" class="txt-area1" placeholder="Digite seu texto..." pattern="^[a-z]$"></textarea>
 			</div>
 			<div class="info">
 				<!-- Aviso de acordo com Figma -->
-				 <img src="img/exclamation.svg" alt="ponto de exclamação" width="12px" >
+				 <img src="img/exclamation.svg" alt="ponto de exclamação" width="12px" id='iconExclamacao'>
 				 <p>Apenas letras minúsculas e sem acento.</p>
 			</div>
 			<div class="botoes">
@@ -33,10 +34,11 @@
 				<!-- Área com o resultado -->
 			<div class="naoEncontrado">
 				<img class="lupa" id="imgLupa" src="img/procurando.svg">
-				<h2 id="msgNone">Nenhuma mensagem encontrada</h2>
+				<h2 id="msgNone" class="naoEncontrado"></h2>
 			</div>
 			<div>
-				<textarea class="txt-area2" readonly cols="20" rows="20" placeholder="[Digite um texto que você deseja criptografar ou descriptografar]"></textarea>
+				<textarea class="txt-area2" id="msgDigiteTexto" readonly cols="20" rows="20" placeholder="Digite um texto que você deseja criptografar ou descriptografar"></textarea>
+				<textarea id="saida" readonly></textarea>
 			</div>
 			<!-- Botão para copiar o conteúdo para a área de trabalho -->
 			<div class="botaoCopia" id="areaBotao"></div>
