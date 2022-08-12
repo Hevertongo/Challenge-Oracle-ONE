@@ -7,8 +7,22 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+textarea {
+    background-color: #F3F5FC;
+    color: #0A3871;
+    /*remove a borda das caixas de textArea*/
+    border: none;
+    outline: none;
+    /*Tira o icone de mudar o tamanho da caixa*/
+    resize: none;
+}
+
 #logo {
     margin: 22% 0 0 3% ;
+}
+
+#logo:hover {
+    animation: expandir 1s linear;
 }
 
 .titulo {
@@ -19,6 +33,10 @@ body {
     line-height: 150%;
     color: #0A3871;
 }
+.titulo:hover {
+    animation: piscar 1s linear infinite;
+}
+
 
 .entrada {
     box-sizing: border-box;
@@ -32,9 +50,9 @@ body {
 .resultados {
     /*Monta um box branco*/
     position: absolute;
-    width: 30%;
+    width: 25%;
     height: 90%;
-    left: 60%;
+    left: 73%;
     top: 15px;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.1);
@@ -46,12 +64,12 @@ body {
     /*Caixa para entrada de texto*/
     position: absolute;
     width: 45%;
-    height: 72px;
+    height: 45%;
     left: 8.5%;
-    top: 120px;
+    top: 15%;
 
     border: none;
-    background-color: #F3F5FC;
+    background-color: transparent;
     margin: 30px 20px 10px 20px;
     
     font-size: 20px;
@@ -62,16 +80,33 @@ body {
 }
 
 .txt-area2 {
-    /*Caixa para entrada de texto*/
+
     position: absolute;
     width: 90%;
     height: 110px;
     left: 0px;
-    top: 340px;
-    border: 1px solid #FFFFFF;
-    background-color: #FFFFFF;
+    top: 65%;
+    border: none;
+    background-color: transparent;
     margin: 30px 20px 10px 20px;
-    font-size: 20px;
+    font-size: 17px;
+    text-align: center;
+    color: #495057;
+    /*Impede a entrada de maiúsculas sem precisar de JavaScript*/
+    text-transform:lowercase;
+}
+
+#saida {
+
+    position: absolute;
+    width: 85%;
+    height: 70%;
+    left: 0px;
+    top: 3%;
+    border: none;
+    background-color: transparent;
+    margin: 30px 20px 10px 20px;
+    font-size: 17px;
     text-align: center;
     color: #495057;
     /*Impede a entrada de maiúsculas sem precisar de JavaScript*/
@@ -98,6 +133,11 @@ body {
     margin: 0 0 0 5px;
 }
 
+#iconExclamacao {
+    animation: expandir 0.4s linear infinite;
+    animation: piscar 0.4 linear infinite;
+}
+
 .botoes {
     display: flex;
     flex-direction: row;
@@ -119,7 +159,7 @@ body {
     gap: 24px;
     position: absolute;
     width: 50%;
-    height: 100%;
+    height: 10%;
     left: 12%;
     top: 85%;
 }
@@ -210,12 +250,14 @@ body {
 }
 .naoEncontrado h2 {
     font-size: 25px;
+    animation: expandir 0.5s linear;
 }
 
 .lupa {
-    width: 60%;
-    height: 20%;
-    margin: 70px 0px 0px 0px;
+    width: 90%;
+    height: 45%;
+    margin: 30px 0px 0px 0px;  
+    animation: piscar 1.8s linear infinite;
 }
 
 
@@ -234,4 +276,28 @@ footer {
 footer a {
     text-decoration: none;
     color: #0A3871;
+}
+
+@keyframes piscar {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes expandir {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
