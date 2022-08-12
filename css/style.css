@@ -77,17 +77,15 @@ textarea {
     color: #0A3871;
     /*Impede a entrada de maiúsculas sem precisar de JavaScript*/
     text-transform:lowercase;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: digita 4s steps(60, end);
 }
 
 .textoEntrada::placeholder {
     color: #0A3871;
 }
 
-.datilografado {
-  white-space: nowrap;
-  overflow: hidden;
-  animation: digita 4s steps(60, end); 
-}
 
 @keyframes digita{ 
   from { width: 0; } 
@@ -148,8 +146,8 @@ textarea {
 }
 
 #iconExclamacao {
-    animation: expandir 0.4s linear infinite;
-    animation: piscar 0.4 linear infinite;
+    animation: expandir 0.6s linear infinite;
+    animation: piscar 0.6 linear infinite;
 }
 
 .botoes {
@@ -261,10 +259,12 @@ textarea {
 .naoEncontrado {
     text-align: center;
     justify-content: center;
+
 }
 .naoEncontrado h2 {
     font-size: 25px;
     color: #0A3871;
+    margin: 5%; 
     animation: expandir 0.5s linear;
 }
 
