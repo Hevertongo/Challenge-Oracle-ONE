@@ -250,6 +250,7 @@ textarea {
 }
 .naoEncontrado h2 {
     font-size: 25px;
+    color: #0A3871;
     animation: expandir 0.5s linear;
 }
 
@@ -265,16 +266,18 @@ footer {
         display: flex;
         position: absolute; 
         flex-direction: column;
-        text-align: center;    
+        text-align: center;
+        justify-content: space-around;    
         font-size: 18px;
         color: #0A3871;
         height: 4 rem; 
         width: 95%; 
-        bottom: 0px;
+        bottom: 9px;
 }
 
 footer a {
     text-decoration: none;
+    font-size: 15px;
     color: #0A3871;
 }
 
