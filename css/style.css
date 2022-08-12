@@ -60,7 +60,7 @@ textarea {
 }
 
 
-.txt-area1 {
+.textoEntrada {
     /*Caixa para entrada de texto*/
     position: absolute;
     width: 45%;
@@ -79,7 +79,21 @@ textarea {
     text-transform:lowercase;
 }
 
-.txt-area2 {
+.textoEntrada::placeholder {
+    color: #0A3871;
+}
+
+.datilografado {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: digita 4s steps(60, end); 
+}
+
+@keyframes digita{ 
+  from { width: 0; } 
+} 
+
+.textoSaida {
 
     position: absolute;
     width: 90%;
@@ -304,3 +318,4 @@ footer a {
         transform: scale(1);
     }
 }
+
